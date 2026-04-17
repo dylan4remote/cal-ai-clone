@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cal AI Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🥗 CalSnap AI</h1>
+      <p class="subtitle">Take a photo of your food to get nutrition info</p>
+      <div class="upload-box">
+        <input
+          type="file"
+          id="foodImage"
+          accept="image/*"
+          capture="environment"
+        />
+        <label for="foodImage">📷 Take or Upload Photo</label>
+      </div>
+      <img id="preview" src="" alt="Food preview" style="display: none" />
+      <button id="analyzeBtn" style="display: none">🔍 Analyze Food</button>
+      <div id="result" class="result-box" style="display: none"></div>
+      <div id="log" class="log-box"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
